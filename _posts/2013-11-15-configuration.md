@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuration
+title: myself
 categories: [general, setup, demo]
 tags: [demo, dbyll, dbtek, setup]
 fullview: true
@@ -9,15 +9,11 @@ fullview: true
 In your config file change these settings
 
 {% highlight yaml %}
-title: dbyll
+title: huuthangit blog
 author:  
-  name: yourname  
-  email: youremail  
-  github: asd123  
-  twitter: asd123  
-  pinterest: asd123  
-  linkedin: asd123  
-  resume: asd123  
-  bio: Your stylish,  minimalist theme!  
-  email_md5: md5ofemail  
+  name: Tran Huu Thang  
+  email: huuthangit.dn@gmail.com | 102150068@sv.dut.edu.vn
+  github: https://github.com/huuthangit
+  facebook: https://www.facebook.com/huuthangit
+  bio: Student IT
 {% endhighlight %}
