@@ -6,7 +6,7 @@ tags: [demo, dbyll, dbtek, setup]
 fullview: true
 ---
 
-In your config file change these settings
+A little bit about myself
 
 {% highlight yaml %}
 title: huuthangit blog
