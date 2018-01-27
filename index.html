@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="weatherApp">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>huuthangit.github.io</title>
+    <title>AngularJS - Dự báo thời tiết</title>
+    <meta charset="utf-8">
+
+    <!-- load bootstrap via CDN -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- load angularjs via CDN -->
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular-resource.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="services.js"></script>
+    <script type="text/javascript" src="routes.js"></script>
+    <script type="text/javascript" src="controllers.js"></script>
+    <script type="text/javascript" src="filters.js"></script>
+
 </head>
+
 <body>
-    Hello world
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Dự báo thời tiết</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
 </body>
+
 </html>

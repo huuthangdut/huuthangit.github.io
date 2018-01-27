@@ -1,0 +1,39 @@
+<div class="header">
+    <div class="city-column">
+        <h1>{{results.cityName}}</h1>
+        <h3>{{results.weather}}</h3>
+        <p>
+            <b>Độ Ẩm</b>
+            <span id="humidity">{{results.humidity}}</span> %</p>
+        <p>
+            <b>Tốc độ gió</b>
+            <span id="wind">{{results.wind}}</span> Km/h</p>
+    </div>
+    <div class="temperature-column">
+        <span>{{results.temp | temp}}</span>
+        <span>
+            <sup>°C</sup>
+            <span>
+    </div>
+</div>
+<div class="body">
+    <table id="predict-table">
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Thời tiết</th>
+                <th>Thấp nhất</th>
+                <th>Cao nhất</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="w in results.forecast">
+            <td>{{w.date}}</td>
+            <td>{{w.text}}</td>
+            <td>{{w.low | temp}}</td>
+            <td>{{w.high | temp}}</td>
+        </tbody>
+
+    </table>
+</div>
+</div>
+</div>
